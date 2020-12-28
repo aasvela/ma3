@@ -65,21 +65,24 @@ body {
 /*About*/
 .about {
     display: flex;
+    justify-content: center;
 
 }
-.about img {
+.about-image {
+ padding: 100px;
+}
+.about-image img {
     max-width: 600px;
     max-height: 600px;
-    padding: 100px;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 .about-textblock {
     background-color: #F2F2F2;
-    border-style: solid;
     border-color: #707070;
     margin: 100px 50px 100px;
     max-width: 600px;
     border-radius: 10%;
+    box-shadow: 1px 5px 5px 1px grey;
     
 }
 .about h2 {
