@@ -18,6 +18,12 @@ footer {
     display: flex;
     justify-content: center;
     }
+.footer_list li {
+    padding: 20px 30px 30px 20px;
+    text-decoration: none;
+    list-style-type: none;
+
+}
 .header-image {
     display: block;
     margin: auto auto;
@@ -51,7 +57,36 @@ body {
     text-decoration: none;
     font-size: 1em;
     padding: 10px 50px;
-    border-radius: 35%;
+    border-radius: 25%;
     border-color: #025951;
     border-style: solid;
+    white-space: nowrap;
+}
+/*About*/
+.about {
+    display: flex;
+
+}
+.about img {
+    max-width: 600px;
+    max-height: 600px;
+    padding: 100px;
+    border-radius: 15%;
+}
+.about-textblock {
+    background-color: #F2F2F2;
+    border-style: solid;
+    border-color: #707070;
+    margin: 100px 50px 100px;
+    max-width: 600px;
+    border-radius: 10%;
+    
+}
+.about h2 {
+    text-align: center;
+    padding: 20px 20px; 
+}
+.about p {
+    padding: 20px 20px 20px 20px;
+
 }
