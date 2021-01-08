@@ -10,10 +10,12 @@ h1, h2, h3, p, a {
 /*header and footer*/
 header {
     background-color: #025951;
+    height: 25%;
 
 }
 footer {
     background-color: #025951;
+    height: 10%;
 }
 .footer_list {
     display: flex;
@@ -35,8 +37,12 @@ footer {
 }
 
 /*body*/
-body {
+main {
     background-color: #ffffff;
+    height: auto;
+}
+.home-section {
+    margin: 50px;
 }
 .home-wrap {
     display: flex;
@@ -157,11 +163,10 @@ body {
     background-color: #023059;
     color: white;
     padding: 12px 30px;
-    border-radius: 15%;
+    border-radius: 20px;
     cursor: pointer;
     float: left;
-    margin-left: 15px;
-    font-weight: bold;
+    margin-left: 15px; 
   }
   /*products page*/
   .product-list {
