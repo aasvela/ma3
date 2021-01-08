@@ -230,18 +230,45 @@ body {
     flex-direction: row;
     justify-content: center;
     margin: 20px;
+    
 }
 .recipt {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
     background-color: #DBF1DC;
     min-width: 600px;
     min-height: 600px;
     border-color: #707070;
     border-radius: 10%;
     box-shadow: 1px 5px 5px 1px grey;
+    padding: 20px;
+    margin-left: 30px;
+}
+.recipt img {
+    float: left;
+    padding: 20px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.recipt_grid_line1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.recipt_grid_line2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
-.form_grid {
-    min-width: 600px;
+.recipt_grid_item {
+   /*border: solid;*/
+   text-align: center;
+}
+.contact_form {
+    min-width: 500px;
     margin: 20px;
  
 }
@@ -254,26 +281,46 @@ body {
     font-size: medium;
     
 }
-.grid1 {
-    display: flex;
-    flex: 1;
-    padding: 10px;
- 
+.form1 {
+    display: block;
+    padding: 10px; 
 }
-.grid2 {
-    display: flex;
-    flex: 1;
-    padding: 10px;
+.form1 input {
+    border-radius: 5px;
+    margin-right: 20px;
+    border-width: 1px;
+    border-color: grey;
 }
-.grid3 {
+.form2 {
     display: flex;
     flex-direction: column;
     flex: 3;
     padding: 10px;
 }
-.grid4 {
+.form2 input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: grey;
+}
+.form3 {
     display: flex;
     flex-direction: column;
-    flex: 3;
-    padding: 10px;
+    padding-bottom: 15px;
+}
+.form3 label {
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.cta_pay {
+    background: #ffffff;
+    color: #025951;
+    text-transform: uppercase;
+    text-align: center;
+    /*font-weight: ;*/
+    padding: 20px;
+    border: solid;
+    border-color: #025951;
+    border-radius: 50px;
+    min-width: 120px;
 }
