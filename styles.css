@@ -79,14 +79,12 @@ main {
 }
 
 .about-image {
- padding-left: 100px;
+ margin: 50px;
 }
 
 .about-image img {
     max-width: 600px;
     max-height: 400px;
-    min-width: 400px;
-    min-height: 400px;
     border-radius: 10%;
 }
 .about-textblock {
@@ -96,6 +94,7 @@ main {
     min-height: 400px;
     border-radius: 10%;
     box-shadow: 1px 5px 5px 1px grey;
+    margin-left: 20px;
     
 }
 .about h2 {
@@ -108,27 +107,29 @@ main {
 
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .about {
         flex-direction: column;
     }
     .about-image {
+        padding: 10px;
+    }
+    .about-image img {
         padding: 0px;
+        width: 100%;
+        height: auto;
     }
 }
 /*contact*/
 .contact {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 20px 20px;
 }
 .contact-block {
     background-color: #F2F2F2;
     border-color: #707070;
-    /*
-    min-width: 400px;
-    min-height: 400px;
-    */
     max-width: 400px;
     max-height: 500px;
     border-radius: 10%;
@@ -168,6 +169,19 @@ main {
     float: left;
     margin-left: 15px; 
   }
+
+  @media only screen and (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+    }
+    .map iframe {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+  }
+
+
   /*products page*/
   .product-list {
     display: grid;
@@ -205,8 +219,8 @@ main {
     padding: 20px;
 }
 .jacket-info {
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
 }
 .jacket-picture {
     max-width: 300px;
@@ -229,6 +243,16 @@ main {
     color: #ffffff;
     text-decoration: none;
 }
+@media only screen and (max-width: 900px) {
+    .product-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .jacket-page {
+        flex-direction: column;
+    }
+}
+
 /*checkout page*/
 .recipt-section {
     display: flex;
@@ -241,8 +265,6 @@ main {
     display: inline-grid;
     grid-template-columns: auto auto auto;
     background-color: #DBF1DC;
-    min-width: 600px;
-    min-height: 600px;
     border-color: #707070;
     border-radius: 10%;
     box-shadow: 1px 5px 5px 1px grey;
@@ -269,13 +291,14 @@ main {
 }
 
 .recipt_grid_item {
-   /*border: solid;*/
    text-align: center;
 }
+.recipt_grid_item_1 p{
+    position: relative; top: 50%;
+    text-align: center;
+}
 .contact_form {
-    min-width: 500px;
     margin: 20px;
- 
 }
 .checkout_text {
     display: flex;
@@ -284,6 +307,8 @@ main {
 }
 .checkout_text h3 {
     font-size: medium;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
 .form1 {
@@ -322,10 +347,17 @@ main {
     color: #025951;
     text-transform: uppercase;
     text-align: center;
-    /*font-weight: ;*/
     padding: 20px;
     border: solid;
     border-color: #025951;
     border-radius: 50px;
     min-width: 120px;
+}
+@media only screen and (max-width: 900px) {
+    .recipt-section {
+        flex-direction: column;
+    }
+    .recipt {
+        margin: 10px
+    }
 }
