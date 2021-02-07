@@ -16,15 +16,21 @@ header {
 footer {
     background-color: #025951;
     height: 10%;
+    
 }
 .footer_list {
     display: flex;
     justify-content: center;
     }
+
 .footer_list li {
     padding: 20px 30px 30px 20px;
     text-decoration: none;
     list-style-type: none;
+
+}
+.footer_list li a {
+    color: #ffffff
 
 }
 .header-image {
@@ -353,6 +359,21 @@ main {
     border-radius: 50px;
     min-width: 120px;
 }
+
+/* OBS! I had to copy this code to get rid of the arrows in the number field - source: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @media only screen and (max-width: 900px) {
     .recipt-section {
         flex-direction: column;
